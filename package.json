@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-atividade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baptixta/portfolio-atividade.git"
+  },
+  "author": "Davi Arcos Baptista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baptixta/portfolio-atividade/issues"
+  },
+  "homepage": "https://github.com/baptixta/portfolio-atividade#readme",
+  "dependencies": {
+    "npm": "^6.11.2"
+  }
+}
