@@ -1,2 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+color-black = #2f2f2f
+color-white = #f1f1f1
+color-purple = #FF8AFE
+
 body
-    background: #222
+    background: color-black
+    font-family: 'Ubuntu', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+section
+    align-items: center
+    display: flex
+    flex-direction: column
+    height: 100vh
+    justify-content: center
+
+.arrow 
+    position: relative
+    &:before
+        background: color-purple
+        bottom: 70px
+        content: ''
+        height: 80px
+        width: 1px
+        position: absolute
+    &:after
+        bottom: 53px
+        color: color-purple
+        content: '▽'
+        position: absolute
+        
+
+.text 
+    color: color-white
+    font-size: 48px
+    overflow: hidden
+    ~/-skills
+        color: color-white
+        font-size: 48px
+        padding: 5px 0px
+        text-align: center
+    span
+        color: color-purple
+        position: relative
+
+.skills
+    display: flex
+    margin-top: 5rem
+    width: 85%
+    ~/-text
+        align-self: center
+        width: 30%
+    ~/-graph
+        width: 70%
+    
+.graph
+    background: color-purple
+    border-radius: 15px
+    content: ''
+    display: inline-block
+    height: 10px
+    margin: 21px auto
+    padding: 14px 0px
+    width: 100%
+
+.portfolio
+    display: flex
+    margin-top: 50px
+
+.portfolio-box
+    background: color-purple
+    border-radius: 15px
+    margin: 25px
+    padding: 20px
+    width: 300px
+
+
+.social-media
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+    a
+        background: color-purple;
+        border-radius: 15px;
+        margin: 10px;
+
+.contato
+    display: flex
+    width: 80%        

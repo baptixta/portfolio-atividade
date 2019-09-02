@@ -5,8 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Davi Arcos Baptista</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <section class="arrow">
+            <h1 class="text">Olá, eu sou o <span>Davi.</span></h1>
+            <h2 class="text">Sou desenvolvedor front-end e crio games.</h2>
+            <h2 class="text">Prazer em conhecê-lo.</h2>
+        </section>
+
+        <section>
+            <h2 class="text">Tudo que <span>eu</span> sei fazer.</h2>
+
+            <div class="skills">
+                <div class="skills-text">
+                    <h2 class="text-skills">HTML</h2>
+                    <h2 class="text-skills">CSS</h2>
+                    <h2 class="text-skills">Git</h2>
+                    <h2 class="text-skills">JS</h2>
+                    <h2 class="text-skills">Photoshop</h2>
+                    <h2 class="text-skills">Blender</h2>
+                    <h2 class="text-skills">C#</h2>
+                </div>
+
+                <div class="skills-graph">
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                    <div class="graph"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text">Meus últimos <span>projetos.</span></h2>
+
+            <div class="portfolio">
+                <div class="portfolio-box">
+
+                </div>
+
+                <div class="portfolio-box">
+                    
+                </div>
+            </div>
+
+            <div class="portfolio">
+                <div class="portfolio-box">
+
+                </div>
+
+                <div class="portfolio-box">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contato">
+                <div>
+                    <h2 class="text">Manda um <span>oi.</span></h2>
+                    <h2 class="text">Vamos nos conectar.</h2>
+
+                    <div class="social-media">
+                        <a href="https://github.com/baptixta" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <img src="dist/img/social-media/github.png" alt="github logo">
+                        </a>
+                        
+                        <a href="" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <img src="dist/img/social-media/twitter.png" alt="twitter logo">
+                        </a>
+            
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <img src="dist/img/social-media/linkedin.png" alt="linkedin logo">
+                        </a>
+            
+                        <a href="https://www.instagram.com/baptixta/" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <img src="dist/img/social-media/instagram.png" alt="instagram logo">
+                        </a>
+            
+                        <a href="https://medium.com/@daviarcosbaptista" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <img src="dist/img/social-media/medium.png" alt="linkedin logo">
+                        </a>
+            
+                        <a href="https://codepen.io/baptixta/" target="_blank" rel="noopener" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                            <img src="dist/img/social-media/codepen.png" alt="instagram logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                        <div class="col-md-12">
+                            <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">                    
+                                <div class="form-group label-floating">
+                                <label class="control-label" for="name">Name</label>
+                                <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group label-floating">
+                                <label class="control-label" for="email">Email</label>
+                                <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                                <div class="help-block with-errors"></div>
+                                </div>
+                                <!-- Subject -->
+                                <div class="form-group label-floating">
+                                <label class="control-label">Subject</label>
+                                <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                                <div class="help-block with-errors"></div>
+                                </div>
+                                <!-- Message -->
+                                <div class="form-group label-floating">
+                                    <label for="message" class="control-label">Message</label>
+                                    <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <!-- Form Submit -->
+                                <div class="form-submit mt-5">
+                                    <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
