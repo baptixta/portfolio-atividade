@@ -191,6 +191,58 @@ h1 {
 .is-active {
   background: #ff62ff;
 }
+/* Tablet */
+@media (max-width: 768px) {
+  .davi-baptista {
+    top: 160px;
+    width: 150px;
+  }
+  .text-skills {
+    font-size: 28px;
+    padding: 18px 0px;
+    text-align: left;
+  }
+}
+/* Mobile */
+@media (max-width: 450px) {
+  .social-media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .social-media > a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    width: 85%;
+  }
+  .text-skills {
+    font-size: 18px;
+    padding: 24px 0px;
+    text-align: left;
+  }
+  .skills-text {
+    align-self: center;
+    width: 50%;
+  }
+  .skills-graph {
+    width: 50%;
+  }
+  .text {
+    font-size: 28px;
+  }
+  .text-main {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .davi-baptista {
+    top: 100px;
+    width: 90px;
+  }
+  .portfolio {
+    margin-left: -20px;
+  }
+}
 @-moz-keyframes float {
   0% {
     transform: translateY(0px);
