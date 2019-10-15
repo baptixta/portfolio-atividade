@@ -18,26 +18,50 @@ section
     height: 100vh
     justify-content: center
 
-.arrow 
-    position: relative
-    &:before
-        background: color-purple
-        bottom: 70px
-        content: ''
-        height: 80px
-        width: 1px
-        position: absolute
-    &:after
-        bottom: 53px
-        color: color-purple
-        content: '▽'
-        position: absolute
-        
+.davi-baptista {
+    animation: float 2s ease infinite
+    position: absolute
+    top: 50px
+    width: 120px
+}
+
+@keyframes float 
+    0%
+        transform: translateY(0px)
+    50%
+        transform: translateY(-30px)
+    100%
+        transform: translateY(0px)
+
+
+.arrow
+    animation: down 1.8s ease infinite
+    bottom: 50px;
+    position: absolute
+    transition: all .4s ease
+
+@keyframes down 
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+        transform: translateY(30px)
+    
+    
+
+.purple {
+    color: color-purple
+}
 
 .text 
     color: color-white
-    font-size: 48px
-    overflow: hidden
+    font-size: 40px
+    text-align: center
+    ~/-main
+        color: color-white
+        letter-spacing: 8px; 
+        text-align: center
     ~/-skills
         color: color-white
         font-size: 48px
@@ -46,11 +70,12 @@ section
     span
         color: color-purple
         position: relative
+        transition: all .4s ease
 
 .skills
     display: flex
-    margin-top: 5rem
-    width: 85%
+    margin-top: 3rem
+    width: 75%
     ~/-text
         align-self: center
         width: 30%
@@ -65,7 +90,10 @@ section
     height: 10px
     margin: 21px auto
     padding: 14px 0px
-    width: 100%
+    transition: all 2s ease
+
+.html, .css, .git, .js, .photoshop, .blender, .c-sharp
+    width: 0    
 
 .portfolio
     display: flex
@@ -89,5 +117,106 @@ section
         margin: 10px;
 
 .contato
+    display: flex    
+
+
+    /* Slider */
+
+.container-slider 
+    align-items: center
     display: flex
-    width: 80%        
+    flex-direction: column
+    justify-content: center
+
+
+h1 
+    color: #222
+    font: 600 3rem 'Roboto'
+    letter-spacing: 1.5px
+    margin-bottom: 1rem
+
+
+.wrapper 
+    align-items: center
+    display: flex
+    justify-content: center
+    overflow: hidden
+    width: 310px
+
+
+.slider 
+    align-items: center
+    display: flex
+    justify-content: center
+    left: 220px
+    padding: 15px
+    position: relative
+    transition: all .5s ease
+
+
+.slide 
+    align-items: center
+    background: #222
+    border-radius: 5px
+    color: #d053d0
+    display: flex;
+    font: 600 3rem 'Roboto'
+    height: 200px
+    justify-content: center
+    margin: 12px
+    position: relative
+    width: 200px
+
+    img 
+        width: 125px
+
+
+.commands 
+    align-items: center
+    display: flex
+    font: 600 1.2rem 'Roboto'
+    justify-content: center
+    position: absolute
+
+
+.command 
+    background: #d053d0
+    border-radius: 5px
+    padding: 30px 12px
+    position: absolute
+    transition: all .4s ease
+
+
+.command:hover 
+    cursor: pointer
+    background: #ff62ff
+
+
+.right 
+    left: 160px
+
+
+.right::after 
+    content: '>'
+    height: 10px
+    position: relative
+    width: 10px
+
+
+.left 
+    right: 130px
+
+
+.left:after 
+    content: '<'
+    height: 10px
+    position: relative
+    width: 10px
+
+
+.is-disabled 
+    pointer-events: none
+
+
+.is-active 
+    background: #ff62ff

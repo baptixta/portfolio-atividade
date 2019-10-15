@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/baptixta/portfolio-atividade#readme",
   "dependencies": {
-    "npm": "^6.11.2"
+    "npm": "^6.11.2",
+    "stylus": "^0.54.7"
   }
 }

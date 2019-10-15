@@ -10,10 +10,15 @@
 </head>
 <body>
     <div class="container-fluid">
-        <section class="arrow">
-            <h1 class="text">Olá, eu sou o <span>Davi.</span></h1>
-            <h2 class="text">Sou desenvolvedor front-end e crio games.</h2>
+        <section>
+            <img src="dist/img/davi-baptista.png" alt="Davi Baptista" class="davi-baptista">
+
+            <h1 class="text-main">Olá, eu sou o <span class="purple">DAVI.</span></h1>
+            <h2 class="text">Sou front-end</h2>
+            <h2 class="text">Crio games.</h2>
             <h2 class="text">Prazer em conhecê-lo.</h2>
+
+            <img src="dist/img/arrow.png" alt="Arrow Icon" class="arrow">
         </section>
 
         <section>
@@ -31,13 +36,33 @@
                 </div>
 
                 <div class="skills-graph">
-                    <div class="graph"></div>
-                    <div class="graph"></div>
-                    <div class="graph"></div>
-                    <div class="graph"></div>
-                    <div class="graph"></div>
-                    <div class="graph"></div>
-                    <div class="graph"></div>
+                    <div>
+                        <div class="graph html"></div>
+                    </div>
+                    
+                    <div>
+                        <div class="graph css"></div>
+                    </div>                
+
+                    <div>
+                        <div class="graph git"></div>
+                    </div>     
+                    
+                    <div>
+                        <div class="graph js"></div>
+                    </div>            
+                    
+                    <div>
+                        <div class="graph photoshop"></div>
+                    </div>                    
+
+                    <div>
+                        <div class="graph blender"></div>
+                    </div>                    
+
+                    <div>
+                        <div class="graph c-sharp"></div>
+                    </div>                
                 </div>
             </div>
         </section>
@@ -46,22 +71,34 @@
             <h2 class="text">Meus últimos <span>projetos.</span></h2>
 
             <div class="portfolio">
-                <div class="portfolio-box">
-
-                </div>
-
-                <div class="portfolio-box">
-
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <div class="portfolio-box">
-
-                </div>
-
-                <div class="portfolio-box">
-
+                <div class="container-slider">
+            
+                    <div class="wrapper">
+                        <div class="slider">
+                            <div class="slide">
+                                <a href="https://studio.gokeyd.com/" target="_blank">
+                                    <img src="dist/img/logo-keyd-studio.png" alt="Site Keyd Studio">
+                                </a>
+                            </div>
+            
+                            <div class="slide">
+                                <a href="https://github.com/baptixta" target="_blank">
+                                    <img src="dist/img/github.png" alt="Github">
+                                </a>
+                            </div>
+            
+                            <div class="slide">
+                                <a href="https://itch.io/baptixta" target="_blank">
+                                    <img src="dist/img/submarine.png" alt="Itch.io">
+                                </a>
+                            </div>        
+                        </div>
+            
+                        <div class="commands">
+                                <div class="command right"></div>
+                                <div class="command left"></div>
+                        </div>
+                    </div>        
                 </div>
             </div>
         </section>
@@ -98,46 +135,12 @@
                         </a>
                     </div>
                 </div>
-
-                <div>
-                        <div class="col-md-12">
-                            <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                                <div class="form-group label-floating">
-                                <label class="control-label" for="name">Name</label>
-                                <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                                <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group label-floating">
-                                <label class="control-label" for="email">Email</label>
-                                <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                                <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Subject -->
-                                <div class="form-group label-floating">
-                                <label class="control-label">Subject</label>
-                                <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                                <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Message -->
-                                <div class="form-group label-floating">
-                                    <label for="message" class="control-label">Message</label>
-                                    <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Form Submit -->
-                                <div class="form-submit mt-5">
-                                    <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </form>
-                        </div>
-                </div>
             </div>
         </section>
     </div>
 
-
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
